@@ -1,0 +1,43 @@
+type hourBlock @entity {
+  "block number - hour (Timestamp / 3600)"
+  id: ID!
+
+  " Unix Hour (Timestamp / 3600 * 3600)"
+  hour: Int!
+
+  "First Block for the Day"
+  startBlockNum: BigInt!
+
+  "Last Block for the Day"
+  endBlockNum: BigInt!
+
+}
+
+type dayBlock @entity {
+  "block number - day (Timestamp / 86400)"
+  id: ID!
+
+  " Unix Day (Timestamp / 86400 * 86400)"
+  day: Int!
+
+  "First Block for the Day"
+  startBlockNum: BigInt!
+
+  "Last Block for the Day"
+  endBlockNum: BigInt!
+}
+
+type weekBlock @entity {
+  "block number - week (Timestamp / 604800)"
+  id: ID!
+
+  " Unix Week (Timestamp / 604800 * 604800)"
+  week: Int!
+
+  "First Block for the Day"
+  startBlockNum: BigInt!
+
+  "Last Block for the Day"
+  endBlockNum: BigInt!
+}
+
