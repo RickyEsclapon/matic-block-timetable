@@ -4,7 +4,7 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: Clock Chain
-    network: mainnet
+    network: matic
     source: 
       address: '0x0000000000000000000000000000000000000000' #address is not utilized but currently required by CLI
       abi: WETH #abi is not utilized in this subgraph but required
